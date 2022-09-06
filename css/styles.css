@@ -5,15 +5,39 @@ body {
     font-size: 16px;
 }
 
-h1 {
+.titulo {
     text-align: center;
     font-size: 3.8rem;
 }
-span {
+.titulo span {
     font-size: 2rem;
+    color: blue;
 }
 
 /* 
 rem -> unidad de medida, permite que el sitio se adapte bien en cualquier dispositivo
 1 rem = 10px
+
+SELECTORES
+selector de elemento
+p {}
+selector de clase
+.cliente {}
+selector de id
+#elemento {}
+selector de atributo
+[src="logo.jpg"] {}
+combinación de descendentes
+.tel .nombre {} / h1 span {} / .cliente h2 {}
+todos los hijos
+.cliente > p {}
+
+ESPECIFIDAD
+es como el navegador va a mostrar el css de acuerdo a que tan específico es el selector que se ha creado
+case1
+p#parrafo {}
+p { color: red!important;} //este es más importante
+case2
+p.parrafo {} //este es más importante
+p {}
 */
