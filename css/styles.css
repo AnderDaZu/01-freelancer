@@ -2,7 +2,7 @@
 :root {
     /* variables de css */
     --blanco: #fff;
-    --negro: #212121;
+    --oscuro: #212121;
     --primario: #ffc107;
     --secundario: #0097a7;
     --gris: #757575;
@@ -23,6 +23,29 @@ body {
 }
 .titulo span {
     font-size: 2rem;
+}
+
+.contenedor {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+.nav-bg {
+    background-color: var(--secundario);
+}
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+}
+.navegacion-principal a {
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.navegacion-principal a:hover {
+    color: var(--oscuro);
+    background-color: var(--primario);
 }
 
 /* 
