@@ -34,7 +34,13 @@ body {
 }
 .navegacion-principal {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 .navegacion-principal a {
     padding: 1rem;
@@ -42,6 +48,7 @@ body {
     text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
+    text-align: center;
 }
 .navegacion-principal a:hover {
     color: var(--oscuro);
@@ -74,4 +81,5 @@ p { color: red!important;} //este es más importante
 case2
 p.parrafo {} //este es más importante
 p {}
+
 */
